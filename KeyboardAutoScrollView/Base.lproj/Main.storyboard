@@ -36,7 +36,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ixm-wA-7YF">
-                                                <rect key="frame" x="57" y="7.5" width="300" height="752"/>
+                                                <rect key="frame" x="57" y="37.5" width="300" height="692"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPJ-Hc-nEb">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
@@ -160,7 +160,7 @@
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rUK-Xc-PN7">
-                                                        <rect key="frame" x="0.0" y="451.5" width="300" height="300.5"/>
+                                                        <rect key="frame" x="0.0" y="451.5" width="300" height="240.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPp-ok-9sN">
                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -214,21 +214,19 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Kc-O0-bgI">
-                                                                <rect key="frame" x="0.0" y="200.5" width="300" height="100"/>
+                                                                <rect key="frame" x="0.0" y="200.5" width="300" height="40"/>
                                                                 <subviews>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" text="Job Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-pg-ijf">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="100" id="gjr-fc-GPD"/>
-                                                                        </constraints>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bgf-bM-0TJ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                                    </textView>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="cSg-pg-ijf" firstAttribute="width" secondItem="4Kc-O0-bgI" secondAttribute="width" id="63k-mr-fNc"/>
                                                                     <constraint firstAttribute="width" constant="300" id="Jb7-Fu-UWf"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="ga3-jk-DZa"/>
+                                                                    <constraint firstItem="Bgf-bM-0TJ" firstAttribute="height" secondItem="4Kc-O0-bgI" secondAttribute="height" id="t0k-z5-WS2"/>
                                                                 </constraints>
                                                             </stackView>
                                                         </subviews>
@@ -273,6 +271,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Iol-Dj-1bj" id="WIV-qQ-mGG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
